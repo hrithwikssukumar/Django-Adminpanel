@@ -1,0 +1,38 @@
+<!-- templates/myapp/home.html -->
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Home</title>
+     <style>
+        body {
+            background-color: grey;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            padding-top: 50px;
+        }
+        h2 {
+            margin-bottom: 30px;
+        }
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: red;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        a:hover {
+            background-color: darkred;
+        }
+     </style>
+ </head>
+ <body>
+    <h2>Welcome to the Home Page</h2>
+    <a href = "{% url "register" %}">Register here </a><br>
+    <a href = "{% url "userlogin" %}">Login here </a><br>
+       
+ </body>
+</html>
