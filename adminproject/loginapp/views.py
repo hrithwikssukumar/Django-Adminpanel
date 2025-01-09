@@ -47,7 +47,7 @@ def user_login(request):
                         msg = "Invalid input"
                 else:
                     msg = 'Email not found' 
-            except CustomUser.DoesnotExist:
+            except CustomUser.DoesNotExist:
                 msg = 'Invalid input'
                 return render(request,'login.html',{'form':form,'msg':msg})
     else:
