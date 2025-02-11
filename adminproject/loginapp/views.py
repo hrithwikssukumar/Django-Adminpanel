@@ -106,6 +106,7 @@ def delete_user(request, user_id):
             return JsonResponse({'success': False, 'error': 'User does not exist'})
     return redirect('adminhome')
 
+
 def edit(request,user_id):
     user = get_object_or_404(CustomUser, id=user_id)
     if request.method == 'POST':
